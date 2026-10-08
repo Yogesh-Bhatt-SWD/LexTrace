@@ -14,3 +14,13 @@ spring:
 
 server:
   port: 8080
+
+# AWS Bedrock configuration
+aws:
+  region: ${AWS_REGION:us-east-1}
+  bedrock:
+    model-id: ${AWS_BEDROCK_MODEL_ID:cohere.embed-english-v3}
+
+# Local upload directory
+app:
+  upload-dir: ${UPLOAD_DIR:uploads/documents}
